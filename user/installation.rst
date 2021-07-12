@@ -9,7 +9,7 @@ The following instructions install a set of common ``colcon`` packages.
 Using Debian packages
 ---------------------
 
-On platforms which support Debian packages using those is preferred since they will be updated using ``apt`` together with other system packages.
+On platforms which support Debian packages, using those is preferred since they will be updated using ``apt`` together with other system packages.
 
 In the context of the ROS project
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -31,7 +31,7 @@ You can choose either of the two following apt repositories.
       $ sudo sh -c 'echo "deb [arch=amd64,arm64] http://repo.ros2.org/ubuntu/main `lsb_release -cs` main" > /etc/apt/sources.list.d/ros2-latest.list'
       $ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 
-After that you can install the Debian package which depends on ``colcon-core`` as well as commonly used extension packages (see `setup.cfg <https://github.com/colcon/colcon-common-extensions/blob/master/setup.cfg>`_).
+After that, you can install the Debian package which depends on ``colcon-core`` as well as the commonly used extension packages (see `setup.cfg <https://github.com/colcon/colcon-common-extensions/blob/master/setup.cfg>`_).
 
 .. code-block:: bash
 
@@ -52,7 +52,7 @@ You can add the GPG key as well as the apt repository using the following comman
 
       $ curl -s https://packagecloud.io/install/repositories/dirk-thomas/colcon/script.deb.sh | sudo bash
 
-After that you can install the Debian package which depends on ``colcon-core`` as well as commonly used extension packages (see `setup.cfg <https://github.com/colcon/colcon-common-extensions/blob/master/setup.cfg>`_).
+After that, you can install the Debian package which depends on ``colcon-core`` as well as commonly used extension packages (see `setup.cfg <https://github.com/colcon/colcon-common-extensions/blob/master/setup.cfg>`_).
 
 .. code-block:: bash
 
@@ -61,7 +61,7 @@ After that you can install the Debian package which depends on ``colcon-core`` a
 Using pip on any platform
 -------------------------
 
-On all non-Debian platforms the most common way of installation is the Python package manager ``pip``.
+On all non-Debian platforms, the most common way of installation is the Python package manager ``pip``.
 The following assumes that you are using a virtual environment with Python 3.5 or higher.
 If you want to install the packages globally it might be necessary to invoke ``pip3`` instead of ``pip`` and require ``sudo``.
 
@@ -84,7 +84,7 @@ Installing from source
 
     This approach is commonly only used by advanced users.
 
-Commonly this is the case when you want to try or leverage new features or bug fixes which have been committed already but are not available in a released version yet.
+Commonly, this is the case when you want to try or leverage new features or bug fixes which have been committed already but are not available in a released version yet.
 In order to use the latest state of any of the above packages you can invoke ``pip`` with a URL of the GitHub repository:
 
 .. code-block:: bash
@@ -94,7 +94,7 @@ In order to use the latest state of any of the above packages you can invoke ``p
 Installing custom branches from source
 --------------------------------------
 
-To try a patch proposed in a pull request you can install the sources of that specific branch by appending the branch name to the URL:
+To try a patch proposed in a pull request, you can install the sources of that specific branch by appending the branch name to the URL:
 
 .. code-block:: bash
 
@@ -103,12 +103,12 @@ To try a patch proposed in a pull request you can install the sources of that sp
 .. note::
 
     Make sure to uninstall that custom version again using ``pip uninstall <name>`` to revert back to the previously used version.
-    Otherwise if you use the Debian packages this pip installed package will overlay even newer Debian packages.
+    Otherwise, if you use the Debian packages this pip installed package will overlay even newer Debian packages.
 
 Building from source
 --------------------
 
-Since this is not a common use case for users you will find the documentation in the :doc:`developer section <../developer/bootstrap>`.
+Since this is not a common use case for users, you will find the documentation in the :doc:`developer section <../developer/bootstrap>`.
 
 Quick directory changes
 -----------------------
@@ -138,7 +138,7 @@ Bash / zsh
 On Linux / macOS the above instructions install the package ``colcon-argcomplete`` which offers command completion for bash and bash-like shells.
 To enable this feature you need to source the shell-specific script provided by that package.
 These scripts are named ``colcon-argcomplete.bash`` / ``colcon-argcomplete.zsh``.
-For convenience you might want to source the one matching your shell in the user configuration, e.g. ``~/.bashrc``:
+For convenience, you might want to source the one matching your shell in the user configuration, e.g. ``~/.bashrc``:
 
 Depending on which instructions you followed to install the packages the location will vary:
 
